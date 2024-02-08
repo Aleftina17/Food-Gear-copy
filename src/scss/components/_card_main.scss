@@ -1,0 +1,144 @@
+.card-main {
+    height: 44.8rem;
+    width: 27.9rem;
+    padding: 4.1rem;
+    background-color: #fff;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: normal;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;
+    position: relative;
+
+    @media (max-width: 48em) {
+        height: 60.6rem;
+        width: 33.4rem;
+        border-radius: 6rem;
+        padding: 4.4rem 2.5rem;
+        align-items: flex-start;
+        text-align: unset;
+    }
+
+    &:hover {
+        background-color: #191919;
+        color: #fff;
+    }
+
+    &__img {
+        max-width: 100%;
+        max-height: 16.5rem;
+        margin-bottom: auto;
+
+        @media (max-width: 48em) {
+            max-height: 26.2rem;
+        }
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 0.8rem;
+        margin-top: auto;
+
+        @media (max-width: 48em) {
+            font-size: 3.2rem;
+            font-weight: 400;
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    &__model {
+        font-size: 1.6rem;
+        color: #c4c4c4;
+        margin-bottom: 2rem;
+
+        @media (max-width: 48em) {
+            font-size: 2.8rem;
+            margin-bottom: 1.4rem;
+        }
+    }
+
+    &__price {
+        color: #bb6ef7;
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+
+        @media (max-width: 48em) {
+            font-size: 3.2rem;
+            margin-bottom: unset;
+            order: 1;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        @media (max-width: 48em) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__country {
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 100%;
+        overflow: hidden;
+
+        @media (max-width: 48em) {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+    &__brand {
+        width: 6.2rem;
+        height: 1.8rem;
+
+        @media (max-width: 48em) {
+            width: 10rem;
+            height: 3rem;
+        }
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    &__sale{
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        border-radius: 100%;
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: #BB6EF7;
+        color: #FFF;
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 48em) {
+            top: 0.6rem;
+            left: 0.6rem;
+            width: 9rem;
+            height: 9rem;
+            font-size: 2.4rem;
+        }
+    }
+}

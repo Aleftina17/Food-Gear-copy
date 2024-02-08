@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api-maps.yandex.ru/v3/?apikey=f7ba1d29-6eb3-44f8-afcb-ec55aaef1305&lang=ru_RU"></script>
+    <title>Контакты</title>
+
+
+</head>
+
+<body>
+    <include src="./components/header.html"></include>
+
+    <main>
+        <section class="contacts-map">
+            <div class="container">
+                <h1 class="contacts-map__title title">Контакты</h1>
+                <div class="contacts-map__content">
+                    <div class="contacts-map__left">
+                        <div class="contacts-map__rotated-text">
+                            <div class="contacts-map__stroke"></div>
+                            <span>Мы на карте</span>
+                        </div>
+                        <div id="map" class="contacts-map__map"></div>
+                    </div>
+                    <div class="contacts-map__right">
+                        <div class="contacts-map__adress">
+                            <div class="contacts-map__adress-title">
+                                Главный офис
+                            </div>
+                            <div class="contacts-map__adress-info">
+                                <div>E-mail: <a href="mail: ">stolovayaaru@bk.ru</a></div>
+                                <div>Время работы Офиса:9:00-18:00</div>
+                                <div>При себе нужно иметь удостоверение личности</div>
+                            </div>
+                        </div>
+                        <div class="contacts-map__adress">
+                            <div class="contacts-map__adress-title">
+                                Склад
+                            </div>
+                            <div class="contacts-map__adress-info">
+                                <div>E-mail: <a href="mail: ">stolovayaaru@bk.ru</a></div>
+                                <div>Время работы склада:9:00-18:00</div>
+                            </div>
+                        </div>
+                        <a class="contacts-map__link btn btn-link" href="">
+                            <span class="btn-link-text">Открыть в Яндекс.Картах</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M6.00009 17.1L16.0801 7L6.78809 7V6L17.7881 6V17H16.7881V7.707L6.68809 17.788L6.00009 17.1Z"
+                                    fill="#BB6EF7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts-routes">
+            <div class="container">
+                <div class="contacts-routes__content">
+                    <div class="contacts-routes__route">
+                        <div class="contacts-routes__route-name">
+                            Схема движения по логистическому комплексу "Томилино" на автотранспорте:
+                        </div>
+                        <div class="contacts-routes__route-img">
+                            <img src="./assets/images/contacts/contacts-img1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="contacts-routes__route">
+                        <div class="contacts-routes__route-name">
+                            Схема движения по логистическому комплексу "Томилино" пешком:
+                        </div>
+                        <div class="contacts-routes__route-img">
+                            <img src="./assets/images/contacts/contacts-img2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <include src="./components/footer.html"></include>
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+.brands {
+  background-color: $dark-gray-shade-color;
+  padding: 9.3rem 0 12.5rem;
+  margin-bottom: 12.5rem;
+  &__title {
+    color: $bg-white;
+    padding-bottom: 3rem;
+    border-bottom: 0.1rem solid $light-gray-color;
+    margin-bottom: 3rem;
+		}
+		&__list {
+      display: flex;
+      flex-wrap: wrap;
+      // height: 30rem;
+      // overflow: hidden;
+      gap: 3.6rem;
+      margin-bottom: 6rem;
+      transition: height 0.5s ease-in-out;
+		}
+		&__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 13.3rem;
+      height: 13.3rem;
+      border-radius: 50%;
+      background-color: $bg-white;
+		}
+		&__img {
+      transform: translateY(-0.5rem);
+      max-width: 12.2rem;
+      min-width: 10.4rem;
+      height: auto;
+		}
+    .btn-primary {
+      margin: 0 auto;
+    }
+}
+
+.brands-detail {
+  margin-bottom: 12.5rem;
+  &__banner {
+    background-color: $dark-gray-shade-color;
+    padding: 3.65rem 0 8.65rem;
+    margin-bottom: 1.9rem;
+    &-wrap {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__desc {
+    width: 62.1rem;
+  }
+  &__logo {
+    width: 41.4rem;
+    height: 6.1rem;
+    margin-bottom: 3rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__text {
+    color: $bg-white;
+  }
+  &__imges {
+    display: flex;
+    justify-content: space-between;
+    width: 65rem;
+  }
+  &__img {
+    width: 100%;
+    height: 15rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+
+.breadcrumbs {
+    margin-bottom: 7rem;
+		&__link {
+      display: inline-flex;
+      align-items: baseline;
+      color: $gray-color;
+      font-family: "Open Sans";
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: normal;
+      margin-right: 1.1rem;
+      &-arr {
+        display: inline-block;
+        width: 0.5rem;
+        height: 0.9rem;
+        margin-left: 1.1rem;
+        & svg {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      &:hover {
+        color: $violet-lilac-color;
+      }
+		}
+		&__not-link {
+      color: $violet-lilac-color;
+      font-family: "Open Sans";
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: normal;
+		}
+}
+.brands-catalog {
+		&__list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4rem;
+		}
+		&__card {
+      width: 30.8rem;
+      border-radius: 3rem;
+      background-color: $bg-white;
+      padding: 2.9rem 5rem 3.8rem;
+      &-logo {
+        margin: 0 auto;
+        width: 10rem;
+        height: 2rem;
+        margin-bottom: 1.1rem;
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      &-img {
+        width: 100%;
+        height: 15rem;
+        margin-bottom: 1.8rem;
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      &-name {
+        color: $dark-gray-shade-color;
+        margin-bottom: 2.2rem;
+      }
+		}
+}
+
+@media (max-width: 48em) {
+  .brands {
+    margin-bottom: 18rem;
+    padding: 4rem 0 18rem;
+    &__title {
+      padding-bottom: 2rem;
+      border-bottom: 0.2rem solid $light-gray-color;
+      margin-bottom: 6rem;
+      }
+      &__list {
+        // height: 62rem;
+        gap: 4rem;
+        margin-bottom: 5rem;
+      }
+      &__link {
+        width: 18rem;
+        height: 18rem;
+      }
+      &__img {
+        transform: translateY(-0.5rem);
+        max-width: 13.8rem;
+        min-width: 9.4rem;
+        height: auto;
+      }
+      .btn-primary {
+        margin: 0;
+        border-radius: 6rem;
+      }
+  }
+
+  .brands-detail {
+    margin-bottom: 18rem;
+    &__banner {
+      padding: 8rem 0 11rem;
+      margin-bottom: 3rem;
+      &-wrap {
+        flex-direction: column;
+      }
+    }
+    &__desc {
+      width: 100%;
+      margin-bottom: 14rem;
+    }
+    &__logo {
+      width: 40rem;
+      height: 7.8rem;
+      margin-bottom: 6rem;
+    }
+    &__imges {
+      width: 100%;
+    }
+    &__img {
+      width: 100%;
+      height: 18.4rem;
+    }
+  }
+
+  .breadcrumbs {
+    margin-bottom: 8rem;
+    &__link {
+      font-size: 2.4rem;
+      margin-right: 0.6rem;
+      &-arr {
+        display: inline-block;
+        width: 0.5rem;
+        height: 1.6rem;
+        margin-left: 0.6rem;
+      }
+    }
+    &__not-link {
+      font-size: 2.4rem;
+    }
+  }
+  .brands-catalog {
+      &__list {
+        gap: 2rem;
+      }
+      &__card {
+        width: 32.4rem;
+        border-radius: 6rem;
+        padding: 1rem 4rem 6.5rem;
+        &-logo {
+          width: 12rem;
+          height: 2.4rem;
+          margin-bottom: 5.3rem;
+        }
+        &-img {
+          width: 100%;
+          height: 16.62rem;
+          margin-bottom: 2rem;
+        }
+        &-name {
+          margin-bottom: 2rem;
+        }
+      }
+      .btn.btn-link {
+        .btn-link-text {
+          font-size: 3.2rem;
+        }
+        & svg {
+          width: 4.8rem;
+          height: 4.8rem;
+        }
+      }
+  }
+}

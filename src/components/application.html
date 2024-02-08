@@ -1,0 +1,46 @@
+<section class="application">
+  <div class="container">
+    <p class="application__title title-m">Оставить заявку</p>
+    <div class="application__inner">
+      <form class="application__form">
+        <div class="input-group">
+          <input type="text" class="input" name="name" placeholder="Имя" />
+          <input type="tel" class="input" name="tel" placeholder="+7" />
+        </div>
+        <div class="input-group">
+          <div class="input-select-wrap">
+            <input type="text" name="service"/>
+            <div class="input input-select">
+              <span class="text-sm">Услуги</span>
+              <div class="input-select__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7" fill="none">
+                  <g clip-path="url(#clip0_2582_19424)">
+                    <path d="M1.58268 0.833333L6.99935 6.25L12.416 0.833334" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2582_19424">
+                      <rect width="14" height="7" fill="white" transform="translate(14 7) rotate(-180)"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <ul class="input-select__drop">
+                <li class="text-sm">Проектирование с нуля</li>
+                <li class="text-sm">Проектирование с нуля</li>
+              </ul>
+            </div>
+          </div>
+          <input type="text" class="input" name="time" placeholder="Удобное время для звонка" />
+        </div>
+        <input type="textarea" class="input" name="comment" placeholder="Комментарий к заявке" />
+        <include src="./components/ui/btns/btn_primary.html"></include>
+      </form>
+      <div class="application__aside">
+        <p class="application__aside-title title-sm">Для чего оставлять заявку?</p>
+        <p class="application__aside-text text-sm">
+          Отправьте заявку на проектирование объекта, и мы сами перезвоним в удобное для Вас время
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

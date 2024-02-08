@@ -1,0 +1,106 @@
+.clients {
+    &__title {
+        text-align: center;
+        font-size: 3.6rem;
+        line-height: normal;
+        font-weight: 600;
+        margin-bottom: 5rem;
+
+        @media (max-width: 48em) {
+            font-size: 4rem;
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 3.6rem;
+        margin-bottom: 4.5rem;
+
+        @media (max-width: 48em) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__card {
+        height: 21.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 48em) {
+            height: 37.6rem;
+        }
+
+        &:hover {
+            .clients__card__img img {
+                filter: none;
+            }
+        }
+
+        &.hidden {
+            display: none;
+        }
+
+        &__img {
+            border-radius: 100%;
+            background-color: #fff;
+            height: 13.3rem;
+            width: 13.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+
+            @media (max-width: 48em) {
+                height: 18rem;
+                width: 18rem;
+                margin-bottom: 2rem;
+            }
+
+            img {
+                width: 12rem;
+                height: 7.2rem;
+                object-fit: contain;
+                transition: filter 0.2s;
+                filter: saturate(0) contrast(0.7);
+
+                @media (max-width: 48em) {
+                    width: 15rem;
+                    height: 10rem;
+                }
+            }
+        }
+
+        &__title {
+            text-align: center;
+            font-size: 1.6rem;
+            line-height: normal;
+
+            @media (max-width: 48em) {
+                font-size: 3.2rem;
+            }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 48em) {
+            .btn {
+                border-radius: 6rem;
+                padding: 2.2rem 3rem;
+
+                & span {
+                    font-size: 3.2rem;
+                }
+            }
+        }
+    }
+}

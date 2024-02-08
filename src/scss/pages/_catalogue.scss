@@ -1,0 +1,16 @@
+.catalogue {
+    &__top {
+        background-image: url("./../../assets/images/catalogue/bg.jpg");
+        background-size: cover;
+        background-position: 100% 37%;
+        background-repeat: no-repeat;
+        height: 28.4rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        @media (max-width: 48em) {
+            height: 25rem;
+        }
+    }
+}

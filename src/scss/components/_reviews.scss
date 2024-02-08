@@ -1,0 +1,155 @@
+.reviews {
+  margin-bottom: 12.5rem;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left {
+    width: 40.6rem;
+    padding: 5rem 5.2rem 5.9rem 5rem;
+    background: $dark-gray-shade-color;
+    border-radius: 3rem;
+    height: fit-content;
+  }
+  &__title {
+    color: $bg-white;
+    margin-bottom: 3rem;
+  }
+  &__text {
+    color: $bg-white;
+    margin-bottom: 4rem;
+  }
+  &__swiper {
+    width: 89.5rem;
+    position: relative;
+    &.swiper {
+      padding-bottom: 8.2rem;
+      margin: 0;
+    }
+  }
+  &__slide {
+    position: relative;
+    padding: 5.5rem;
+    background: $bg-white;
+    border-radius: 3rem;
+    cursor: pointer;
+    &-img {
+      width: 16.4rem;
+      height: 22.7rem;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-arr {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 6rem;
+      height: 6rem;
+      background-color: rgba(208, 203, 203, 0.10);
+      border-radius: 50%;
+      backdrop-filter: blur(1.1rem);
+      & svg {
+        width: 1.6rem;
+        height: 1.1rem;
+      }
+    }
+  }
+  &__controls {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    flex-direction: row;
+    width: fit-content;
+    margin-left: 0;
+    gap: 4rem;
+  }
+  .controls {
+		&__navigation {
+      flex-direction: row;
+		}
+    .scrollbar {
+      transform: rotate(0);
+    }
+  }
+}
+@media (max-width: 48em) {
+  .reviews {
+    margin-bottom: 18rem;
+    &__inner {
+      flex-direction: column;
+    }
+    &__left {
+      width: 100%;
+      padding: 6rem;
+      border-radius: 6rem;
+      height: fit-content;
+      margin-bottom: 6rem;
+    }
+    &__title {
+      margin-bottom: 2rem;
+    }
+    &__text {
+      margin-bottom: 5rem;
+    }
+    &__swiper {
+      width: 100%;
+      &.swiper {
+        padding-bottom: 15rem;
+      }
+    }
+    &__slide {
+      padding: 4rem;
+      border-radius: 6rem;
+      &-img {
+        width: 32.8rem;
+        height: 45.4rem;
+      }
+      &-arr {
+        width: 12rem;
+        height: 12rem;
+        & svg {
+          width: 3.2rem;
+          height: 2.2rem;
+        }
+      }
+    }
+    &__controls {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      flex-direction: row-reverse;
+      width: fit-content;
+      margin-left: 0;
+      gap: 4rem;
+    }
+    .controls {
+      &__navigation {
+        flex-direction: row;
+      }
+      .scrollbar {
+        width: 48.5rem;
+        transform: rotate(0);
+      }
+    }
+    .btn-primary {
+      border-radius: 6rem;
+    }
+    .reviews__btn-prev,
+      .reviews__btn-next {
+        width: 7.2rem;
+        height: 7.2rem;
+        align-items: center;
+        & svg {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+  }
+}

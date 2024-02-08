@@ -1,0 +1,184 @@
+.about {
+  & .komplex-banner__top {
+      margin-bottom: 0;
+  }
+}
+.approach {
+  margin-bottom: 12.5rem;
+		&__inner {
+      display: flex;
+      justify-content: space-between;
+		}
+		&__title {
+      width: fit-content;
+		}
+		&__content {
+      width: 71.3rem;
+		}
+		&__text {
+      margin-bottom: 2rem;
+		}
+		&__list {
+      & li {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+      &-num {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.1rem;
+        height: 3.1rem;
+        background-color: $violet-lilac-color;
+        border-radius: 50%;
+        color: $bg-white;
+      }
+      & .text-sm {
+        width: 90%;
+      }
+		}
+}
+
+.benefits {
+  margin-bottom: 12.5rem;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.6rem;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 65.8rem;
+    padding: 2.7rem 7.7rem 2.7rem 2.7rem;
+    border-radius: 3rem;
+    background: #DFDFDF;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9.2rem;
+    height: 8.8rem;
+    background-color: $light-gray-color;
+    border-radius: 3rem;
+    margin-right: 2rem;
+    & img {
+      width: 4rem;
+      height: 4rem;
+      object-fit: contain;
+    }
+  }
+  &__text {
+    width: 44.2rem;
+    color: $dark-gray-color;
+  }
+}
+
+.about-brands {
+  	margin-bottom: 12.5rem;
+  &__title {
+    font-size: 4.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  &__text {
+    width: 117.7rem;
+    margin: 0 auto 5rem;
+    text-align: center;
+  }
+  .brands {
+    &__link {
+      & img {
+        transition: filter 0.2s;
+        filter: saturate(0) contrast(0.7);
+      }
+      &:hover {
+        .brands__img img {
+          filter: none;
+        }
+      }
+    }
+  }
+  .btn-link {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 48em) {
+  .approach {
+    margin-bottom: 18rem;
+      &__inner {
+        flex-direction: column;
+      }
+      &__title {
+        width: 100%;
+        margin-bottom: 6rem;
+      }
+      &__content {
+        width: 100%;
+      }
+      &__text {
+        margin-bottom: 3rem;
+      }
+      &__list {
+        & li {
+          width: 100%;
+          display: flex;
+          gap: 1.4rem;
+          align-items: flex-start;
+          margin-bottom: 2rem;
+        }
+        &-num {
+          width: 5.2rem;
+          height: 5.2rem;
+        }
+        & .text-sm {
+          width: 90%;
+        }
+      }
+  }
+  
+  .benefits {
+    margin-bottom: 18rem;
+    &__inner {
+      gap: 2rem;
+    }
+    &__item {
+      width: 100%;
+      padding: 4rem;
+      border-radius: 6rem;
+    }
+    &__icon {
+      width: 9.6rem;
+      height: 9.2rem;
+    }
+    &__text {
+      width: 49.8rem;
+    }
+  }
+  
+  .about-brands {
+      margin-bottom: 18rem;
+    &__title {
+      font-size: 4rem;
+      margin-bottom: 6rem;
+    }
+    &__text {
+      width: 100%;
+      margin: 0 0 6rem;
+    }
+    .btn-link {
+      &-text {
+        font-size: 3.2rem;
+      }
+      & svg {
+        width: 4.8rem;
+        height: 4.8rem;
+      }
+    }
+  }
+}

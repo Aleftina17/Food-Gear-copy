@@ -1,0 +1,108 @@
+.catalogue-sale{
+    margin-bottom: 12.5rem;
+
+    @media (max-width: 48em) {
+        margin-bottom: 18rem;
+    }
+
+    &__top{
+        background-image: url('./../../assets/images/catalogue-sale/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 28.4rem;
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        @media (max-width: 48em) {
+            height: 25rem; 
+        }
+    }
+
+    &__title{
+        font-size: 6rem;
+        line-height: normal;
+        font-weight: 600;
+
+        
+    }
+
+    &__cards-box{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 6rem;
+        grid-column-gap: 4rem;
+        margin-bottom: 6rem;
+
+        @media (max-width: 48em) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 5rem;
+         }
+
+        .card-main{
+            width: 100%;
+        }
+    }
+
+    &__pagination{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        justify-content: flex-end;
+
+        @media (max-width: 48em) {
+            justify-content: center;
+            gap: 2.4rem;
+        }
+
+        .pagination-bullets{
+            display: flex;
+            align-items: center;
+            gap: 1.7rem;
+            color: #C4C4C4;
+            height: 2.2rem;
+
+            @media (max-width: 48em) {
+                gap: 2rem;
+            }
+
+            span{  
+                font-size: 1.6rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width: 48em) {
+                    font-size: 2.8rem;
+                }
+
+                &.active{
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    color: #373737;
+
+                    @media (max-width: 48em) {
+                        font-size: 3.2rem;
+                    }
+    
+                }
+            }
+        }
+
+        button{
+            width: 1.5rem;
+            height: 1.7rem;
+
+            @media (max-width: 48em) {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+
+            img{
+                height: 100%;
+            }
+        }
+    }
+}

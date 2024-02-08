@@ -1,0 +1,868 @@
+.list-circle {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: $light-gray-color;
+}
+
+.title {
+  font-family: "Open Sans";
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.title-m {
+  font-family: "Open Sans";
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.title-sm {
+  font-family: "Open Sans";
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.text {
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.text-sm {
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+}
+.swiper {
+  margin: 0;
+}
+.swiper-pagination-bullet {
+  width: 0.8rem !important;
+  height: 0.8rem !important;
+  background-color: #656565 !important;
+  border-radius: 50%;
+}
+.swiper-pagination-bullet-active {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: $violet-lilac-color !important;
+  border-radius: 50%;
+}
+.swiper-button-disabled {
+  background-color: #fff;
+  & svg path {
+    stroke: #000000;
+  }
+}
+.swiper-scrollbar-horizontal .swiper-scrollbar-drag,
+.swiper-scrollbar-vertical .swiper-scrollbar-drag {
+  position: relative;
+  top: -0.1rem;
+  width: 10rem;
+  height: 0.3rem;
+  background-color: $violet-lilac-color;
+}
+.controls {
+  width: 4.2rem;
+  margin-left: 4rem;
+  gap: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .scrollbar {
+    transform: rotate(90deg);
+    width: 27rem;
+    height: 0.1rem;
+    background: $gray-color;
+  }
+  &.vertical {
+    gap: 0;
+    .scrollbar {
+      transform: rotate(0deg);
+      width: 0.1rem;
+      height: 27rem;
+      background: $gray-color;
+    }
+    .swiper-scrollbar-drag {
+      position: relative;
+      left: -0.1rem;
+      width: 0.3rem;
+      height: 10rem;
+    }
+  }
+}
+
+.komplex-banner {
+  background-color: $dark-gray-shade-color;
+  padding: 4rem 0 12.5rem;
+  margin-bottom: 12.5rem;
+  .btn-link--show {
+    width: fit-content;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12.5rem;
+  }
+  &__desc {
+    width: 87.6rem;
+  }
+
+  &__title {
+    width: 100%;
+    color: $bg-white;
+    padding-bottom: 2.2rem;
+    margin-bottom: 2.2rem;
+    border-bottom: 0.1rem solid $light-gray-color;
+  }
+  &__text {
+    width: 83.7rem;
+    color: $bg-white;
+  }
+  &__swiper {
+    width: 37.7rem;
+    border-radius: 3rem;
+    background-color: $gray-color;
+  }
+  &__slide {
+    position: relative;
+    width: 100%;
+    padding: 3.4rem;
+    &-top {
+      display: flex;
+      gap: 1.6rem;
+      padding-bottom: 3rem;
+      border-bottom: 0.1rem solid $light-gray-color;
+      margin-bottom: 3rem;
+    }
+    &-icon {
+      width: 4.5rem;
+      height: 4.5rem;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    &-title {
+      color: $bg-white;
+    }
+    &-text {
+      color: $bg-white;
+      margin-bottom: 4rem;
+      width: 95%;
+    }
+  }
+
+  &__pagination {
+    &.swiper-pagination.swiper-pagination-horizontal {
+      position: absolute;
+      left: unset;
+      right: 3.4rem;
+      bottom: 4rem;
+      width: fit-content;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+    }
+    .swiper-pagination-bullet {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: #656565;
+      border-radius: 50%;
+    }
+    .swiper-pagination-bullet-active {
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: $violet-lilac-color;
+      border-radius: 50%;
+    }
+    .swiper-button-disabled {
+      background-color: #fff;
+      & svg path {
+        stroke: #000000;
+      }
+    }
+    .swiper-scrollbar-horizontal .swiper-scrollbar-drag,
+    .swiper-scrollbar-vertical .swiper-scrollbar-drag {
+      position: relative;
+      top: -0.1rem;
+      width: 10rem;
+      height: 0.3rem;
+      background-color: $violet-lilac-color;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.1rem;
+    width: 21.5rem;
+    background-color: $gray-color;
+    border-radius: 3rem;
+    padding: 3rem;
+    &-img {
+      width: 6rem;
+      height: 6rem;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    &-title {
+      text-align: center;
+      color: $bg-white;
+    }
+  }
+}
+
+.structure {
+  margin-bottom: 12.5rem;
+  &__inner {
+    display: flex;
+  }
+
+  &__desc {
+    margin-right: 4.3rem;
+  }
+  &__title {
+    margin-bottom: 3rem;
+    color: $dark-gray-color;
+  }
+  &__list {
+    width: 44.2rem;
+    margin-bottom: 4rem;
+    & li {
+      position: relative;
+      padding-left: 1.7rem;
+      color: $dark-gray-color;
+      margin-bottom: 1.4rem;
+      &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 100%;
+        background-color: $light-gray-color;
+        width: 0.7rem;
+        height: 0.7rem;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__swiper {
+    width: 77.2rem;
+  }
+  &__slide {
+    width: 36.6rem;
+    height: 42.4rem;
+    border-radius: 3rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.offers {
+  margin-bottom: 12.5rem;
+		&__title {
+      margin-bottom: 5rem;
+		}
+		&__btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+      .btn-secondary {
+        .btn-text {
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+        &.active {
+          border-color: #bb6ef7;
+          .btn-text {
+            color: #bb6ef7;
+          }
+        }
+      }
+		}
+		&__content {
+      width: 100%;
+      padding: 4.6rem 5.7rem 4.6rem 4.6rem;
+      border-radius: 3rem;
+      background-color: $dark-gray-shade-color;
+      &-center {
+        display: flex;
+        align-items: flex-end;
+        gap: 3.5rem;
+        &-slider {
+          width: 53.4rem;
+        }
+      }
+      &-title {
+        margin-bottom: 1.1rem;
+        color: $bg-white;
+      }
+      &-subtitle {
+        margin-bottom: 2.2rem;
+        color: $bg-white;
+      }
+      &-text {
+        color: $bg-white;
+        width: 35.6rem;
+      }
+		}
+		&__tab {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+		}
+		&__swiper-thumbs {
+      width: 20.8rem;
+      height: 43.5rem;
+		}
+		&__thumb {
+      width: 100%;
+      height: 13.7rem;
+      border-radius: 3rem;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 3rem;
+      }
+      &.swiper-slide {
+        height: 13.7rem;
+      }
+		}
+
+		&__swiper {
+      width: 100%;
+      &-scrollbar {
+        &.scrollbar {
+          background: $light-gray-color;
+        }
+      }
+		}
+		&__slide {
+      width: 100%;
+      height: 35rem;
+      border-radius: 3rem;
+      & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3rem;
+        object-fit: cover;
+      }
+      &.swiper-slide {
+        height: 35rem;
+      }
+		}
+}
+
+.application {
+  margin-bottom: 12.5rem;
+  .btn-primary {
+    margin-top: 4rem;
+  }
+  &__title {
+    margin-bottom: 5rem;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form {
+    width: 81.7rem;
+    .input-group {
+      display: flex;
+      margin-bottom: 3.6rem;
+      gap: 5.7rem;
+    }
+    .input {
+      width: 100%;
+      &.input-select {
+        position: relative;
+        display: flex;
+        gap: 1.2rem;
+      }
+      .input-select {
+        &__img {
+          width: 1.4rem;
+          // transform: translateX(-50%);
+          height: 0.7rem;
+          & svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        &__drop {
+          position: absolute;
+          bottom: -8.5rem;
+          width: 28rem;
+          padding: 2rem;
+          border-radius: 3rem;
+          background-color: $dark-gray-shade-color;
+          & li {
+            color: $bg-white;
+            margin-bottom: 1rem;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    input[name="service"] {
+      visibility: hidden;
+      width: 0;
+    }
+  }
+  &__aside {
+    width: 34.7rem;
+    &-title {
+      margin-bottom: 2.4rem;
+    }
+  }
+}
+
+.clients {
+  margin-bottom: 12.5rem;
+  &__title {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.6rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4.5rem;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 19.5rem;
+  }
+  &__img {
+    width: 13.3rem;
+    height: 13.3rem;
+    border-radius: 50%;
+    background-color: $bg-white;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .btn-primary {
+    margin: 0 auto;
+  }
+  &__name {
+    text-align: center;
+  }
+}
+
+@media (max-width: 48em) {
+  .list-circle {
+    width: 1rem;
+    height: 1rem;
+  }
+  .title {
+    font-size: 6rem;
+  }
+  .title-m {
+    font-size: 4rem;
+  }
+  .title-sm {
+    font-size: 3.2rem;
+  }
+  .text {
+    font-size: 3rem;
+  }
+  .text-sm {
+    font-size: 3.2rem;
+  }
+  .swiper-pagination-bullet {
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+  }
+  .swiper-pagination-bullet-active {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .swiper-scrollbar-drag {
+    width: 20rem;
+    height: 0.6rem;
+    background-color: $violet-lilac-color;
+  }
+  .controls {
+    width: fit-content;
+    gap: 3rem;
+    margin-left: 0;
+    flex-direction: row-reverse;
+    align-items: center;
+    &__navigation {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      margin-bottom: 0rem;
+    }
+    .scrollbar {
+      transform: rotate(0);
+      width: 49rem;
+      height: 0.2rem;
+      background: $gray-color;
+    }
+    &.vertical {
+      gap: 0;
+      width: 100%;
+      height: 4.2rem;
+      .scrollbar {
+        transform: rotate(270deg);
+        margin-right: 29rem;
+        width: 0.2rem;
+        height: 45rem;
+      }
+      .swiper-scrollbar-drag {
+        position: relative;
+        left: -0.15rem;
+        width: 0.6rem;
+        height: 20rem;
+      }
+    }
+  }
+
+  .komplex-banner {
+    margin-bottom: 18rem;
+    padding: 8rem 0 18rem;
+    &__top {
+      flex-direction: column;
+      margin-bottom: 8rem;
+    }
+    &__desc {
+      width: 100%;
+      margin-bottom: 8rem;
+    }
+    .btn-link--show svg {
+      width: 3.2rem;
+      height: 3rem;
+    }
+    .btn-link-text.show {
+      font-size: 3.2rem;
+    }
+    &__title {
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 0.2rem solid $light-gray-color;
+    }
+    &__text {
+      width: 100%;
+    }
+    &__swiper {
+      width: 100%;
+      border-radius: 6rem;
+    }
+    &__slide {
+      padding: 4rem;
+      &-top {
+        display: flex;
+        gap: 1.4rem;
+        border-bottom: 0.2rem solid $light-gray-color;
+      }
+      &-icon {
+        width: 7rem;
+        height: 7rem;
+      }
+      &-text {
+        margin-bottom: 5rem;
+      }
+    }
+  
+    &__pagination {
+      right: 3.2rem;
+      bottom: 4rem;
+      gap: 2rem;
+    }
+  
+    &__bottom {
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    &__item {
+      gap: 2rem;
+      width: 32.4rem;
+      height: 28rem;
+      border-radius: 6rem;
+      padding: 4rem 2rem;
+      &-img {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+  }
+  .structure {
+    margin-bottom: 18rem;
+    &__inner {
+      flex-direction: column;
+    }
+    &__desc {
+      margin-right: 0;
+      margin-bottom: 5.2rem;
+    }
+    &__title {
+      margin-bottom: 6rem;
+    }
+    &__list {
+      width: 100%;
+      margin-bottom: 5rem;
+      & li {
+        padding-left: 2.8rem;
+        margin-bottom: 2rem;
+        &::before {
+          width: 1.4rem;
+          height: 1.4rem;
+        }
+      }
+    }
+    &__swiper {
+      width: 100%;
+      margin-bottom: 4.8rem;
+    }
+    &__slide {
+      width: 33.4rem;
+      height: 34.8rem;
+      border-radius: 6rem;
+    }
+    .btn-primary {
+      border-radius: 6rem;
+    }
+    .structure__btn-prev,
+    .structure__btn-next {
+      width: 7.2rem;
+      height: 7.2rem;
+      align-items: center;
+      & svg {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+
+  .offers {
+    overflow: hidden;
+    margin-bottom: 20.4rem;
+      &__title {
+        margin-bottom: 3rem;
+      }
+      &__btns {
+        width: 224rem;
+        gap: 2rem;
+        margin-bottom: 6rem;
+        .btn-secondary {
+          border-radius: 6rem;
+          .btn-text {
+            font-size: 2.8rem;
+            font-weight: 400;
+          }
+        }
+        &-wrap {
+          width: 100%;
+          overflow: scroll;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
+      &__content {
+        padding: 4rem;
+        border-radius: 6rem;
+        &-center {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 3.5rem;
+          &-slider {
+            width: 100%;
+          }
+        }
+        &-title {
+          margin-bottom: 0.6rem;
+        }
+        &-subtitle {
+          margin-bottom: 2rem;
+        }
+        &-text {
+          margin-bottom: 2rem;
+          width: 100%;
+        }
+      }
+      &__tab {
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+      }
+      &__swiper-thumbs {
+        top: 16rem;
+        width: 16rem;
+        height: 43.6rem;
+        &.swiper {
+          position: absolute;
+        }
+      }
+      &__thumb {
+        width: 100%;
+        height: 13.2rem;
+        border-radius: 4rem;
+        & img {
+          border-radius: 4rem;
+        }
+        &.swiper-slide {
+          height: 13.2rem;
+        }
+      }
+  
+      &__swiper {
+        width: 42.8rem;
+        &.swiper {
+          margin-left: auto;
+          margin-right: 0;
+        }
+        &-scrollbar {
+          &.scrollbar {
+            width: 40rem;
+            background-color: $light-gray-color;
+          }
+        }
+      }
+      &__slide {
+        height: 43.6rem;
+        border-radius: 6rem;
+        & img {
+          border-radius: 6rem;
+        }
+        &.swiper-slide {
+          height: 43.6rem;
+        }
+      }
+      .offers__btn-prev,
+      .offers__btn-next {
+        width: 7.2rem;
+        height: 7.2rem;
+        align-items: center;
+        & svg {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+  }
+
+  .application {
+    margin-bottom: 18rem;
+    &__title {
+      margin-bottom: 6rem;
+    }
+    &__inner {
+      flex-direction: column-reverse;
+    }
+    &__form {
+      width: 100%;
+      .input-group {
+        flex-direction: column;
+        margin-bottom: 3rem;
+        gap: 3rem;
+      }
+      .input {
+        width: 100%;
+        &.input-select {
+          gap: 1.4rem;
+        }
+        .input-select {
+          &__img {
+            width: 1.8rem;
+            height: 1rem;
+          }
+          &__drop {
+            bottom: -17.5rem;
+            width: 42.8rem;
+            padding: 4rem;
+            border-radius: 6rem;
+            & li {
+              margin-bottom: 2rem;
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+      &-btn {
+        margin-top: 6.4rem;
+      }
+    }
+    &__aside {
+      width: 100%;
+      margin-bottom: 6rem;
+      &-title {
+        margin-bottom: 2rem;
+      }
+    }
+    .btn-primary {
+      border-radius: 6rem;
+    }
+  }
+  .clients {
+    margin-bottom: 18rem;
+    &__title {
+      margin-bottom: 6rem;
+    }
+    &__list {
+      gap: 4rem;
+      margin-bottom: 5rem;
+    }
+    &__item {
+      gap: 2rem;
+      width: 31.5rem;
+    }
+    &__img {
+      width: 18rem;
+      height: 18rem;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .btn-primary {
+      margin: 0 auto;
+      border-radius: 6rem;
+    }
+    &__name {
+      text-align: center;
+    }
+  }
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpack</title>
+  </head>
+  <body>
+    <div
+      class="container"
+      style="
+        padding-top: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 4em;
+        gap: 2rem;
+      "
+    >
+      <h2 style="margin-bottom: 2rem; font-size: 5rem">Ссылки на страницы</h2>
+      <a href="./home.html" style="text-decoration: underline">Главная</a>
+      <a href="./engineering.html" style="text-decoration: underline">Проектирование</a>
+      <a href="./komplexnoe.html" style="text-decoration: underline">Комплексное оснащение</a>
+      <a href="./brands.html" style="text-decoration: underline">Бренды</a>
+      <a href="./brands-detail.html" style="text-decoration: underline">Бренды детальная</a>
+      <a href="./portfolio.html" style="text-decoration: underline">Портфолио</a>
+      <a href="./catalogue_sale.html" style="text-decoration: underline">Каталог распродаж</a>
+      <a href="./catalogue.html" style="text-decoration: underline">Каталог</a>
+      <a href="./cafe_bars_rest.html" style="text-decoration: underline">Кафе, барам, ресторанам</a>
+      <a href="./gov_customers.html" style="text-decoration: underline">Государственным заказчикам</a>
+      <a href="./about.html" style="text-decoration: underline">О компании</a>
+      <a href="./schools.html" style="text-decoration: underline">Детским садам и школам</a>
+      <a href="./service.html" style="text-decoration: underline">Сервис и ремонт</a>
+      <a href="./one_product.html" style="text-decoration: underline">Один товар</a>
+      <a href="./hospitals.html" style="text-decoration: underline">Таблет-питание для больниц</a>
+      <a href="./pastry_shops.html" style="text-decoration: underline">Оборудование для кондитерских</a>
+      <a href="./contacts.html" style="text-decoration: underline">Контакты</a>
+      <a href="./catalogue_equip.html" style="text-decoration: underline">Каталог оборудования</a>
+      <a href="./portfolio-project.html" style="text-decoration: underline">Портфолио - один проект</a>
+      <a href="./equip-hospital.html" style="text-decoration: underline">Оборудование для пищеблока больницы</a>
+      <a href="./equip-coffee.html" style="text-decoration: underline">Оборудование для кофейни</a>
+      <a href="./equip-catering.html" style="text-decoration: underline">Оборудование для пищеблока</a>
+      <a href="./equip-pizzeria.html" style="text-decoration: underline">Оборудование для пиццерии</a>
+
+      
+      <h2 style="margin-bottom: 2rem; font-size: 5rem">Модалки</h2>
+      <button class="btn btn-primary" data-modal="success">
+        <span class="btn-text">Модалка успех</span>
+      </button>
+      <button class="btn btn-primary" data-modal="review">
+        <span class="btn-text">Модалка отправить отзыв</span>
+      </button>
+
+      <div class="ui-kit" style="margin-top: 4rem">
+        <div class="container">
+          <h2 style="margin-bottom: 4rem; font-size: 5rem">Ui kit</h2>
+
+          <div
+            class="ui-kit-list"
+            style="
+              display: flex;
+              gap: 4rem;
+              flex-wrap: wrap;
+              align-items: center;
+            "
+          >
+            <include src="./components/ui/btns/btn_primary.html"></include>
+            <include src="./components/ui/btns/btn_primary_icon.html"></include>
+            <include src="./components/ui/btns/btn_arrow.html"></include>
+            <include src="./components/ui/btns/btn_secondary.html"></include>
+            <include src="./components/ui/btns/btn_link.html"></include>
+            <include src="./components/ui/btns/btn_link_show.html"></include>
+            <include src="./components/ui/input.html"></include>
+            <include src="./components/ui/checkbox.html"></include>
+            <include src="./components/modal.html"></include>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

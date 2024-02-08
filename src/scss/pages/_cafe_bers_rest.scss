@@ -1,0 +1,131 @@
+.cafe {
+    position: relative;
+
+    &__top {
+        line-height: normal;
+        margin-top: 6rem;
+        background-color: #191919;
+        color: #fff;
+        position: relative;
+
+        @media (max-width: 48em) {
+            margin-top: unset;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            left: 0;
+            top: -10rem;
+            width: 100%;
+            height: 20rem;
+            background-color: #191919;
+            z-index: -2;
+
+            @media (max-width: 48em) {
+                margin-top: unset;
+            }
+        }
+
+        .container {
+            display: flex;
+            gap: 3.3rem;
+            padding-bottom: 12.5rem;
+
+            @media (max-width: 48em) {
+                flex-direction: column;
+                gap: 2rem;
+                padding-bottom: 18rem;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 600;
+        width: 74.6rem;
+        @media (max-width: 48em) {
+            width: 100%;
+        }
+    }
+
+    &__desc {
+        font-size: 1.6rem;
+        width: 57.3rem;
+        padding-top: 1.7rem;
+
+        @media (max-width: 48em) {
+            font-size: 3.2rem;
+            width: 100%;
+            padding-top: unset;
+        }
+    }
+
+    .catalogue-subcategory {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            height: 73.3rem;
+            top: 0;
+            right: 0;
+            left: 0;
+            background-color: #191919;
+
+            @media (max-width: 48em) {
+                margin-top: unset;
+                height: 118.2rem;
+            }
+        }
+
+        @media (max-width: 48em) {
+        }
+
+        .catalogue-subcategory__content__card-left {
+            background-color: #1f1f1f;
+            z-index: 0;
+
+            @media (max-width: 48em) {
+                background-color: unset;
+            }
+        }
+
+        .catalogue-subcategory__content__title {
+            color: #fff;
+        }
+
+        .catalogue-subcategory__content__top {
+            margin-bottom: 5.7rem;
+            @media (max-width: 48em) {
+                margin-bottom: 6rem;
+            }
+        }
+
+        .catalogue-subcategory__tabs {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            border-top: 0.1rem solid #c4c4c4;
+            border-bottom: 0.1rem solid #c4c4c4;
+            margin-bottom: 12.5rem;
+
+            .btn-link {
+                display: none;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                margin-bottom: 12rem;
+            }
+        }
+
+        .catalogue-subcategory__tab.active,
+        .catalogue-subcategory__tab:hover {
+            background-color: #2b2b2b;
+        }
+
+        .catalogue-subcategory__content__cards-top {
+            bottom: 4.8rem;
+        }
+    }
+}

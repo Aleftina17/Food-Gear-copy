@@ -1,0 +1,224 @@
+@keyframes opacText {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.swiper-hero {
+    position: relative;
+    padding-top: 3rem;
+    background: #191919;
+    height: 110.1rem;
+
+    @media (max-width: 48em) {
+        padding-bottom: 18rem;
+        height: auto;
+    }
+    .breadcrumbs {
+        .container {
+            padding: 0;
+        }
+    }
+
+
+    .container {
+        position: relative;
+    }
+
+    .controls__navigation {
+        position: absolute;
+        top: 12.4rem;
+        right: 28.4rem;
+        z-index: 5;
+
+        @media (max-width: 48em) {
+            top: 108.9rem;
+            right: 2.4rem;
+        }
+    }
+
+    .btn-arrow {
+        @media (max-width: 48em) {
+            svg {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 11.1rem;
+        margin-left: 38rem;
+        width: fit-content;
+
+        @media (max-width: 48em) {
+            gap: 3rem;
+            margin-top: 10.2rem;
+            margin-left: 5.6rem;
+        }
+
+        &-stroke {
+            width: 4.7rem;
+            height: 0.1rem;
+            background: #BB6EF7;
+
+            @media (max-width: 48em) {
+                width: 9.4rem;
+                height: 0.2rem;
+            }
+        }
+
+        &-text {
+            font-size: 1.6rem;
+            color: #C4C4C4;
+
+            @media (max-width: 48em) {
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+    &__scrollbar {
+        margin: 0 auto;
+        width: 60rem;
+        height: 1px;
+        background-color: #C4C4C4;
+        --swiper-scrollbar-drag-bg-color: #BB6EF7;
+
+        @media (max-width: 48em) {
+            margin: 16.2rem 0 0 3.2rem;
+            width: 49rem;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 8.9rem;
+        left: 50%;
+        margin-left: -40.45rem;
+        width: 80.9rem;
+        height: 82.2rem;
+        background: rgba(83, 83, 83, 0.2);
+        border-radius: 3rem;
+
+        @media (max-width: 48em) {
+            width: 69rem;
+            height: 91.6rem;
+            margin-left: -34.5rem;
+            border-radius: 6rem;
+        }
+    }
+
+    &__swiper {
+        margin-top: 8.1rem;
+        width: 166.5rem;
+        height: inherit;
+
+        @media (max-width: 48em) {
+            margin-top: 4rem;
+            width: 100%;
+        }
+
+        &-wrapper {
+            margin-bottom: 5rem;
+            margin-left: -18.7rem;
+            height: 56.1rem !important;
+
+            @media (max-width: 48em) {
+                margin-left: -26rem;
+                height: 72rem !important;
+            }
+        }
+    }
+
+    &__slide-img {
+        width: 100%;
+        height: 33.6rem;
+
+        img {
+            border-radius: 3rem;
+            object-fit: cover;
+            height: 100%;
+
+            @media (max-width: 48em) {
+             border-radius: 6rem;   
+            }
+        }
+    }
+
+    &__slide-text {
+        display: none;
+        margin-top: 3rem;
+        color: #fff;
+        font-size: 3.6rem;
+        font-weight: 600;
+        width: 60.1rem;
+        opacity: 0;
+    }
+
+    .swiper-slide {
+        width: 23rem;
+        height: 56.1rem;
+        display: flex;
+        align-items: flex-end;
+        transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+
+        @media (max-width: 48em) {
+            width: 26.6rem;
+            height: 72rem;
+        }
+
+        .swiper-hero__slide-img {
+            margin-bottom: 12.8rem;
+
+            
+        }
+    }
+
+    .swiper-slide-active {
+        width: 60.1rem !important;
+        height: 56.1rem;
+        flex-direction: column;
+
+        @media (max-width: 48em) {
+            width: 53.8rem;
+            height: 72rem;
+        }
+        .swiper-hero__slide-img {
+            margin-bottom: 0;
+            height: 43.3rem;
+
+            @media (max-width: 48em) {
+                height: 59.2rem;
+            }
+        }
+
+
+        .swiper-hero__slide-text {
+            display: block;
+            opacity: 1;
+            animation: opacText 0.6s ease-in-out;
+        }
+    }
+}
+
+.portfolio-used {
+    &__title {
+        margin-bottom: 5rem;
+
+        @media (max-width: 48em) {
+            margin-bottom: 6rem;
+        }
+    }
+}

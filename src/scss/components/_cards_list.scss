@@ -1,0 +1,44 @@
+.cards-list {
+    
+
+    .container{
+        position: relative;
+    }
+
+    &__title {
+        font-size: 3.6rem;
+        font-weight: 600;
+        margin-bottom: 5.5rem;
+
+        @media (max-width: 48em) {
+            font-size: 4rem;
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4rem;
+
+        .card-main{
+            width: 100%;
+        }
+
+        @media (max-width: 48em) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @media (max-width: 48em) {
+            position: static;
+            margin-top: 5rem;
+        }
+    }
+}

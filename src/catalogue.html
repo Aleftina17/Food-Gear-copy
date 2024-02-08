@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Каталог</title>
+    </head>
+    <body>
+        <include src="./components/header.html"></include>
+        <main class="catalogue">
+            <div class="catalogue__top"></div>
+            <div class="breadcrumbs">
+                <div class="container">
+                    <a href="#!" class="breadcrumb">Каталог</a>
+                    <img src="./assets/images/icons/arrow-breadcrumbs.svg" alt="" />
+                    <a href="#!" class="breadcrumb">Тепловое оборудование</a>
+                    <img src="./assets/images/icons/arrow-breadcrumbs.svg" alt="" />
+                    <a href="#!" class="breadcrumb">Пароконвектоматы</a>
+                    <img src="./assets/images/icons/arrow-breadcrumbs.svg" alt="" />
+                    <a href="#!" class="breadcrumb active underline">Бойлерные</a>
+                </div>
+            </div>
+            <include src="./components/catalogue_subcategory.html"></include>
+        </main>
+        <include src="./components/footer.html"></include>
+    </body>
+</html>
